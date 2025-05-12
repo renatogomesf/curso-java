@@ -52,5 +52,11 @@ public class Aula02TiposPrimitivos {
         // mas caso o valor caiba, ele imprime normal.
         float salarioFloat2 = (float) 2500.0d;
         System.out.println("casting com float colocando um double " + salarioFloat2);
+
+
+
+        // Strings: não é tipo primitivo. é um referenc tipe. é uma classe, começa com a letra Maiúscula e usa áspas duplas "".
+        String texto = "pode adicionar um grande texto. não tem limite";
+        System.out.println(texto);
     }
 }
