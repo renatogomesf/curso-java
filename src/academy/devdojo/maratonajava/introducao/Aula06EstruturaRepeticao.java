@@ -4,7 +4,7 @@ public class Aula06EstruturaRepeticao {
     public static void main(String[] args) {
         // while, do while, for
 
-        // while===============================================================================
+        // WHILE ===============================================================================
         int count = 0;
 
         while (count < 10) {
@@ -12,7 +12,7 @@ public class Aula06EstruturaRepeticao {
             count++;
         }
 
-        // do while=============================================================================
+        // DO WHILE =============================================================================
         int count2 = 0;
 
         do {
@@ -20,17 +20,30 @@ public class Aula06EstruturaRepeticao {
             count2++;
         } while (count2 < 10);
 
-        // for==================================================================================
+        // FOR ==================================================================================
         for (int i = 0; i < 10; i++) {
             //System.out.println("for " + i);
         }
 
 
-        // exercicio ==========================================================================
+        // EXERCÍCIO ==========================================================================
+        // imprimir os números pares de 0 a 100
         for (int i = 0; i <= 100; i++) {
             if (i % 2 == 0) {
-                System.out.println("par " + i);
+                //System.out.println("par " + i);
             }
+        }
+
+        // BREAK (para um loop. sai do laço de repetição)=======================================
+        // imprimir os primeiros 25 números de um dado valor. por exemplo, 50.
+        int valorMax = 50;
+
+        for (int i = 0; i < valorMax; i++) {
+            if (i > 25) {
+                break;
+            }
+
+            System.out.println(i);
         }
     }
 }
