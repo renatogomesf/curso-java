@@ -43,7 +43,18 @@ public class Aula06EstruturaRepeticao {
                 break;
             }
 
-            System.out.println(i);
+            //System.out.println(i);
+        }
+
+        // CONTINUE ===========================================================================
+        // ignora tudo (blocos de códido) que tem abaixo dele e volta pro início do loop continuando ele.
+        for (int i = 0; i <= 15; i++) {
+            if (i <= 10) {
+                System.out.println("continue " + i);
+                continue;
+            }
+
+            System.out.println("fora do if " + i);
         }
     }
 }
