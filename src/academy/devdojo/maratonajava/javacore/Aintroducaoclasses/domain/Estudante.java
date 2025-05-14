@@ -1,4 +1,4 @@
-package academy.devdojo.maratonajava.javacore.introducaoclasses.domain;
+package academy.devdojo.maratonajava.javacore.Aintroducaoclasses.domain;
 
 // classes são usadas para representar algo do mundo real. ela pode conter atributos e métodos.
 // elas também podem ter o "public static void main".
