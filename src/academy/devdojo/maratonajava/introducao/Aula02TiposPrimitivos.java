@@ -1,7 +1,11 @@
 package academy.devdojo.maratonajava.introducao;
 
 public class Aula02TiposPrimitivos {
+    int variavelClas; // VARIÁVEL DE ESCOPO DE CLASSE (GLOBAL). PODE SER USADA POR TODOS OS MÉTODS.
+
     public static void main(String[] args){
+        int variavelLocal; // VARIÁVEL DE ESCOPO LOCAL. SÓ É ACESSADA DENTRO DESSE MÉTODO.
+
         // temos 8 tipos primitivos: int, double, float, char, byte, short, long, boolean
 
         // para nomeclatura de variáveis, quando a palavra é simples, começa com letra minúscula. agora, quando a palavra for composta, a letra de cada palavra depois da primeira começa maiúscula. "titlecase"
