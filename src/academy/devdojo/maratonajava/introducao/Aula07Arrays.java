@@ -20,22 +20,49 @@ public class Aula07Arrays {
         idades[1] = 15;
         idades[2] = 11;
 
-        System.out.println("int: "+idades[2]);
+        //System.out.println("int: "+idades[2]);
 
         char[] idades2 = new char[3];
-        System.out.println("char: "+idades2[0]);
+        //System.out.println("char: "+idades2[0]);
 
         boolean[] idades3 = new boolean[3];
-        System.out.println("boolean: "+idades3[0]);
+        //.out.println("boolean: "+idades3[0]);
 
         String[] idades4 = new String[3];
-        System.out.println("String: "+idades4[0]);
+        //System.out.println("String: "+idades4[0]);
 
         double[] idades5 = new double[3];
-        System.out.println("double: "+idades5[0]);
+        //System.out.println("double: "+idades5[0]);
 
         float[] idades6 = new float[3];
-        System.out.println("float: "+idades6[0]);
+        //System.out.println("float: "+idades6[0]);
 
+
+        // ITERAR UM ARRAY ==================================================================
+        String[] nomes = new String[4];
+
+        nomes[0] = "teste";
+        nomes[1] = "goku";
+        nomes[2] = "vix";
+        nomes[3] = "aaaaaaa";
+
+        for (int i = 0; i < nomes.length; i++) {
+            //System.out.println(nomes[i]);
+        }
+
+        // NOVA FORMA DE INICIALIZAR UM ARRAY E DE ITERAR UM ARRAY (FOREACH) =================
+        int[] numeros = {1, 2, 3, 4, 5}; // parecido com javascript. mas usa {}.
+        int[] numeros2 = new int[]{1, 2, 3, 4, 5}; // da mesma forma anterior mas usando new e o tipo, mas sem definir o tamanho.
+
+        for (int i = 0; i < numeros.length; i++) {
+            //System.out.println(numeros[i]);
+        }
+
+        // foreach
+        // o tipo da variável local do foreach deve ser a mesma do array que vai iterar.
+        // pega item por item do array e joga dentro da variável local do foreach (faz uma referência).
+        for (int num : numeros) {
+            System.out.println(num);
+        }
     }
 }
