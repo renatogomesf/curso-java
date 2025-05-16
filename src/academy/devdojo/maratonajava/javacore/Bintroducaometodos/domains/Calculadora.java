@@ -46,4 +46,42 @@ public class Calculadora {
         System.out.println("num1 " + num1);
         System.out.println("num2 " + num2);
     }
+
+
+    // VARARGS ===============================================================================
+    public void somaArray(int[] numeros) {
+        int soma = 0;
+
+        for (int num : numeros) {
+            soma += num;
+        }
+
+        System.out.println(soma);
+    }
+
+    // agora com varargs
+    // por debaixo dos panos, o valores recebidos são colocados/montados num array.
+    public void somaVarArgs(int... numeros) {
+        int soma = 0;
+
+        for (int num : numeros) {
+            soma += num;
+        }
+
+        System.out.println(soma);
+    }
+
+    // SE EXISTIR MAIS DE UM PARÂMETRO para o métod, o varargs precisa vir no final.
+    // ex: numa sequência de valores, o primeiro vai pra "num1", o segundo para "num2" e restante para "números"
+    public void somaVarArgsComMaisDeUmParametro(float num1, double num2, int... numeros) {
+        int soma = 0;
+
+        for (int num : numeros) {
+            soma += num;
+        }
+
+        System.out.println(soma);
+        System.out.println(num1);
+        System.out.println(num2);
+    }
 }
