@@ -21,5 +21,10 @@ public class EstudanteTeste01 {
         // passando objetos como argumentos/parâmetro.
         imprimeEstudante.imprime(estudante1);
         imprimeEstudante.imprime(estudante2);
+
+        System.out.println("###########################################");
+
+        imprimeEstudante.imprime(estudante1);
+        imprimeEstudante.imprime(estudante2);
     }
 }
