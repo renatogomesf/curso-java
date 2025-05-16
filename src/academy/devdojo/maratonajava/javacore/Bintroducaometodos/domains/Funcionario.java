@@ -1,9 +1,12 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domains;
 
+import java.lang.reflect.Constructor;
+
 public class Funcionario {
-    public String nome;
-    public int idade;
-    public double[] salarios;
+    private String nome;
+    private int idade;
+    private double[] salarios;
+    private double somaSalario = 0;
 
     public void imprimir() {
         System.out.println(this.nome);
@@ -22,15 +25,26 @@ public class Funcionario {
             return;
         }
 
-        double somaSalario = 0;
         int tamanhoArray = this.salarios.length;
 
         for (double valor : this.salarios) {
-            somaSalario += valor;
+            this.somaSalario += valor;
         }
 
-        double media = somaSalario / tamanhoArray;
+        double media =this.somaSalario / tamanhoArray;
 
         System.out.println("média: " + media);
+    }
+
+    public void setSalarios(double[] salarios) {
+        this.salarios = salarios;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 }
