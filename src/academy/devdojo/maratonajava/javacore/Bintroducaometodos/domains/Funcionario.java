@@ -1,7 +1,5 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.domains;
 
-import java.lang.reflect.Constructor;
-
 public class Funcionario {
     private String nome;
     private int idade;
@@ -31,7 +29,7 @@ public class Funcionario {
             this.somaSalario += valor;
         }
 
-        double media =this.somaSalario / tamanhoArray;
+        double media = this.somaSalario / tamanhoArray;
 
         System.out.println("média: " + media);
     }
