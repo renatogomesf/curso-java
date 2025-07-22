@@ -1,7 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Bintroducaometodos.teste;
 
 import academy.devdojo.maratonajava.javacore.Bintroducaometodos.domains.Estudante;
-import academy.devdojo.maratonajava.javacore.Bintroducaometodos.domains.ImprimeEstudante;
 
 public class EstudanteTeste02 {
     public static void main(String[] args) {
