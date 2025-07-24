@@ -18,6 +18,7 @@ public class HerancaTeste01 {
         pessoa.imprime();
 
         Funcionario funcionario = new Funcionario();
+        // é possivel acessar setNome, setCpf, setEndereco da classe pessoa por que funcionário herda a classe pessoa. mas a classe pessoa não tem acesso ao setSalario da classe funcionário por conta da hierarquia. só tem acesso quem herda.
         funcionario.setNome("lucas");
         funcionario.setCpf("567567567");
         funcionario.setEndereco(endereco);
