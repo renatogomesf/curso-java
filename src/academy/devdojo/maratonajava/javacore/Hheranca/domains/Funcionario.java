@@ -4,9 +4,22 @@ package academy.devdojo.maratonajava.javacore.Hheranca.domains;
 public class Funcionario extends Pessoa {
     private double salario;
 
+    static {
+        System.out.println("dentro do bloco de inicialização estático de FUNCIONÁRIO");
+    }
+
+    {
+        System.out.println("dentro do bloco de inicialização de FUNCIONÁRIO 1");
+    }
+
+    {
+        System.out.println("dentro do bloco de inicialização de FUNCIONÁRIO 2");
+    }
+
     // construtores de uma classe que extende outra usam "super()" para repassar os parametros do construtor local para o construtor da classe pai e dentro vai os parametros pedidos pelo construtor da classe pai/extendida.
     public Funcionario(String nome) {
         super(nome);
+        System.out.println("dentro do construtor de funcionário");
     }
 
     // esse métod imprime está sobreescrevendo o métod da classe pessoa. quando funcionário chamar o metodo imprime() será chamado esse de funcionário. caso não existisse esse metodo aqui, seria chamado o metodo imprime da classe pessoa na qual é extendida.
