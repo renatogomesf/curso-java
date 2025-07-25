@@ -1,5 +1,8 @@
 package academy.devdojo.maratonajava.javacore.Jmodificadorfinal.domains;
 
+
+// terá casos em que eu não quero que minha classe seja extendida. para isso, usa-se o modificador "final". quando usa "final" nenhuma outra classe onde extender essa. isso impede que o comportamento dessa classe (como os atributos e metodos funcionam) seja modificado, tornando ela constante. mas ainda é possível instancia-la e modificar seu valores para criar objetos diferentes.
+//ex: public final class Carro
 public class Carro {
     private String nome;
 
@@ -20,6 +23,13 @@ public class Carro {
     // para inicializar desta forma, é preciso que o atributo não seja static.
     public Carro() {
         //VELOCIDADE_LIMITE = 250;
+    }
+
+    // usando o modificador "final" num metodo, impede que ele seja sobrescrito por uma classe que extenda essa classe.
+    //ex: se uma classe extende essa, quando eu instanciar a classe filha eu posso chamar o metodo "imprime" dessa classe na classe pai e, caso eu deseje, eu posso criar outro metodo "imprime" dentro da classe filha (que extende essa classe pai) com o mesmo nome e, na hora de instanciar, será chamado o metodo da classe filha ao invés da classe pai (ou seja, sobrescrevendo). com o modificador final no metodo, eu impesso essa sobrescrita, o que proibe que eu crie um metodo "imprime" na clase filha (gera erro). sendo permitido somente a chamada do metodo da classe pai na hora de instanciar.
+    // em outras palavras, usando o final, eu digo que o comportamento do meu metodo deve ser o mesmo para todas as classes que extendem essa classe. não permitindo modificar.
+    public final void imprime() {
+        System.out.println(this.nome);
     }
 
     public String getNome() {
