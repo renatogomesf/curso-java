@@ -25,5 +25,11 @@ public class ClienteTeste01 {
         // para acessar um metodo dentro de uma classe enum, sempre tem que chamar o atributo enum antes.
         System.out.println(TipoPagamento.DEBITO.calcularDesconto(100));
         System.out.println(TipoPagamento.CREDITO.calcularDesconto(100));
+
+        //TipoCliente tipoCliente = TipoCliente.valueOf("Pessoa Física");
+        //System.out.println(tipoCliente); gera erro
+
+        TipoCliente tipoCliente2 = TipoCliente.tipoClientePorNomeRelatorio("Pessoa Física");
+        System.out.println(tipoCliente2);
     }
 }

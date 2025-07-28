@@ -19,4 +19,16 @@ public enum TipoCliente {
         this.VALOR = valor;
         this.nomeRelatorio = nomeRelatorio;
     }
+
+    // busca por um valor de um enum (neste caso buscara uma string) e irá retornar o proprio enum.
+    public static TipoCliente tipoClientePorNomeRelatorio(String nomeRelatorio) {
+
+        // values(): retorna um array com todos os enuns.
+        for (TipoCliente tipoCliente : values()) {
+            if (tipoCliente.nomeRelatorio.equals(nomeRelatorio)) {
+                return tipoCliente;
+            }
+        }
+        return null;
+    }
 }
