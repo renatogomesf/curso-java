@@ -3,9 +3,6 @@ package academy.devdojo.maratonajava.javacore.Kenum.domains;
 public class Cliente {
 
     //é possível criar uma classe enum dentro de outra classe. mas criar num arquivo separado é mais adequado.
-    public enum TipoPagamento {
-        DEBITO, CREDITO
-    }
 
     private String nome;
     private TipoCliente tipoCliente;

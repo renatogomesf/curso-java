@@ -6,7 +6,8 @@ public enum TipoCliente {
     //PESSOA_FISICA,
     //PESSOA_JURIDICA,
 
-    //outra forma de atributos de uma classe enum. desta forma é usado o numero atribuidos a elas e é obrigatório o uso de construtor.
+    //outra forma de atributos de uma classe enum. desta forma é usado o numero ou qualquer outro valor atribuido a elas e é obrigatório o uso de construtor.
+    //quando um dos enum for chamado (PESSOA_FISICA ou PESSOA_JURIDICA), os valores atribuidos a ele será passado pros parâmetros do construtor que, por sua vez, atribui aos atributos/variáveis definidos depois dos enuns. com desta forma é possível acessar somente o valor desejado como 1 ou 2 ao invés da string completa, facilitando no manejo das informações.
     PESSOA_FISICA(1, "Pessoa Física"),
     PESSOA_JURIDICA(2, "Pessoa Jurídica");
 
