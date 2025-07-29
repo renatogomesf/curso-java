@@ -10,8 +10,10 @@ public class FuncionarioTeste01 {
         //Funcionario funcionario = new Funcionario("zoro", 2000);
         Gerente gerente = new Gerente("nami", 5000);
         System.out.println(gerente);
+        gerente.imprime();
 
         Desenvolvedor desenvolvedor = new Desenvolvedor("eu mesmo",4000);
         System.out.println(desenvolvedor);
+        desenvolvedor.imprime();
     }
 }
