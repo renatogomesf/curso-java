@@ -12,4 +12,9 @@ public class DatabaseLoader implements DataLoader, DataRemover {
     public void remove() {
         System.out.println("removendo do banco de dados");
     }
+
+    // tentativa de sobrescrever o metodo statico da interface. não é possível. neste caso, agora temos dois metodos com o mesmo nome.
+    public static void retriverMaxDataSize(){
+        System.out.println("dentro do retriverMaxDataSize na classe");
+    }
 }
