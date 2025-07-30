@@ -10,5 +10,12 @@ public class DataLoaderTeste01 {
 
         databaseLoader.load();
         fileLoader.load();
+
+        databaseLoader.remove();
+        fileLoader.remove();
+
+        //esses metodos chamados vem da interface.
+        databaseLoader.checkPermission();
+        fileLoader.checkPermission();
     }
 }
