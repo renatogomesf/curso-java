@@ -20,7 +20,7 @@ public class ProdutoTeste02 {
 
         System.out.println("==========================================================");
 
-        // um tipo mais genérico => faz referência para um tipo mais específico.
+        // um tipo mais genérico (super classe) => faz referência para um tipo mais específico (sub classe).
         Produto produto2 = new Tomate("tomatasso", 15);
 
         System.out.println(produto2.getNome());
