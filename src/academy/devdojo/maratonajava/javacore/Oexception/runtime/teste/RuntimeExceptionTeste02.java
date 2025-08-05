@@ -8,7 +8,7 @@ public class RuntimeExceptionTeste02 {
         System.out.println("finalizado");
     }
 
-    // throws IllegalArgumentException: é um aviso para que usar o metodo. significa que o metodo PODE - não necessariamente irá lançar - lançar um erro do tipo IllegalArgumentException.
+    // throws IllegalArgumentException: é um aviso para quem usar o metodo. significa que o metodo PODE - não necessariamente irá lançar - lançar um erro do tipo IllegalArgumentException.
     // é comum não ver exceptions do tipo runtime com declaração de throws.
 
     /**
