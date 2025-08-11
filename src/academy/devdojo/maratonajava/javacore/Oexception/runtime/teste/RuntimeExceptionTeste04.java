@@ -1,5 +1,9 @@
 package academy.devdojo.maratonajava.javacore.Oexception.runtime.teste;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
 public class RuntimeExceptionTeste04 {
     public static void main(String[] args) {
         try {
@@ -22,5 +26,31 @@ public class RuntimeExceptionTeste04 {
         } catch (RuntimeException e) {
             System.out.println("dentro do RuntimeException");
         }
+
+
+        try {
+            talvezLanceException();
+
+            // exceptions que não estão na mesma linha de herança (ou seja, não heranças uma da outra. EX: FileNotFoundException é filha de IOException) podem ser colocados dentro do mesmo catch separados por "|" (pipe)
+        } catch (SQLException | FileNotFoundException e) {
+            e.printStackTrace();
+        }
+
+//        try {
+//            talvezLanceException2();
+//
+//            // exceptions que não estão na mesma linha de herança (ou seja, não heranças uma da outra. EX: FileNotFoundException é filha de IOException) podem ser colocados dentro do mesmo catch separados por "|" (pipe)
+//            //EXEMPLO DE EXCEPTION NA MESMA LINHA DE HERANÇA gera erro
+//        } catch (SQLException | FileNotFoundException | IOException e) {
+//            e.printStackTrace();
+//        }
+    }
+
+    // é possível lançar/avisa mais de uma exception. basta separar por vírgula.
+    private static void talvezLanceException() throws SQLException, FileNotFoundException {
+    }
+
+    // nem faz sentido lançar FileNotFoundException e IOException pois um é filho do outro.
+    private static void talvezLanceException2() throws SQLException, FileNotFoundException, IOException {
     }
 }
