@@ -15,6 +15,7 @@ public class StringTeste01 {
         // agora sim é possível acessar "william suane", pois estou assossiando a uma varável para poder acessar.
         nome = nome.concat(" suane");
 
+        // "==" faz comparação de referência. verifica se os dois estão referenciando a mesma string.
         System.out.println(nome == nome2);
 
 
