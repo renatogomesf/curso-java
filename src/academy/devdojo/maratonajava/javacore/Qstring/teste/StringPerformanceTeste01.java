@@ -1,6 +1,6 @@
 package academy.devdojo.maratonajava.javacore.Qstring.teste;
 
-public class StringPerformanceTeste {
+public class StringPerformanceTeste01 {
     public static void main(String[] args) {
         long inicio = System.currentTimeMillis();
         // é possível usar "_" (underline) nos número para ajudar a visualização e divição de centenas e milhares ou milhões.
