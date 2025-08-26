@@ -19,7 +19,7 @@ public class LocalDateTeste01 {
 
         // LocalDate: usado para trabalhar somente com datas.
         // neste caso, esotu passando um dia, mês e ano.
-        LocalDate date = LocalDate.of(2025, Month.APRIL,6);
+        LocalDate date = LocalDate.of(2025, Month.APRIL, 6);
         System.out.println(date);
 
         // aqui eu estou pegando a data atual de forma automática.
