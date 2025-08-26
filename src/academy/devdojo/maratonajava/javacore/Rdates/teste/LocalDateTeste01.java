@@ -5,14 +5,14 @@ import java.time.Month;
 import java.time.temporal.ChronoField;
 import java.util.Calendar;
 import java.util.Date;
-import java.util.Locale;
+
 
 public class LocalDateTeste01 {
     public static void main(String[] args) {
 
         // dois modos menos usados de se trabalhar com datas dos pacotes "java.util" e "java.text"
-        //System.out.println(new Date());
-        //System.out.println(Calendar.getInstance());
+        System.out.println(new Date());
+        System.out.println(Calendar.getInstance());
 
 
         // modo mais moderno de se trabalhar com datas usando o pacote "java.time". simplifica muito o trabalho com datas, pois possui metodos e classe simples e objetivas.
