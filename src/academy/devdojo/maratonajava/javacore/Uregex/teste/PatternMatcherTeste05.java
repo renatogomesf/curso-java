@@ -25,11 +25,9 @@ public class PatternMatcherTeste05 {
         // () = agrupamento
         // | = "ou" ex: o(v|c)o -> vai dar metch em ovo e oco.
         // $ = representa o fim da linha/ fim do texto.
-        // . = caractere coringa. quando coloco na regex 1.3, significa que quero um padrão que comece com 1, termine com 3 e tenha qualquer caractere no meio. ex: 123, 133, 1@3, 1A3, 1a3, 1 3
-
-        // o "." (ponto) é um caractere de regex. para usalo como string (algo a ser verificado se existe no texto), precisa usar duas contra-barra. uma para sair de caractere de regex e outra exigida pelo java.
-
-        // o "." (ponto) dentro dos colchetes não precisam de contra barra. somente fora.
+        // . = caractere coringa. quando coloco na regex 1.3, significa que quero um padrão que comece com 1, termine com 3 e tenha qualquer caractere no meio. ex: 123, 133, 1@3, 1A3, 1a3, 1 3. o "." (ponto) é um caractere de regex. para usalo como string (algo a ser verificado se existe no texto), precisa usar duas contra-barra. uma para sair de caractere de regex e outra exigida pelo java. o "." (ponto) dentro dos colchetes não precisam de contra barra. somente fora.
+        // ^ = permite definir o que deve ter no início da string. ex: ^\d (no início da string tem que ter um dígito)
+        // [^] = dentro dos colchetes ele funciona como negação. ex: [abc] aqui estou buscando por "abc". mas usando [^abc], estou dizendo que quero tudo menos "abc".
 
         // aqui está sendo feita uma busca de padrão. o cerro é analisar email por email separadamente. ao inves de conferir tudo a partir de uma única string.
         String regex2 = "([a-zA-Z0-9._-])+@([a-z])+(\\.([a-z])+)+";
