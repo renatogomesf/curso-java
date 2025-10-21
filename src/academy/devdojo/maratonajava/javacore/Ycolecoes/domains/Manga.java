@@ -2,7 +2,9 @@ package academy.devdojo.maratonajava.javacore.Ycolecoes.domains;
 
 import java.util.Objects;
 
-public class Manga {
+
+// para poder fazer a organização de uma lista através do "sort()", precisa implementar a interface Comparable<"tipo desejado">
+public class Manga implements Comparable<Manga>{
     private Long id;
     private String nome;
     private double preco;
@@ -30,7 +32,7 @@ public class Manga {
 
     @Override
     public String toString() {
-        return "Manga{" +
+        return "{" +
                 "id=" + id +
                 ", nome='" + nome + '\'' +
                 ", preco=" + preco +
@@ -59,5 +61,34 @@ public class Manga {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    // metodo usado para comparar que vem da implementação do Comparable. retorna um inteiro.
+    // é aqui onde EU DEFINO como o java vai comparar.
+    @Override
+    public int compareTo(Manga outroManga) {
+
+        // ----- REGRA PARA DEFINIR RETORNO -----
+        // retorna negativo se this < outroManga
+        // retorna 0 (zero) se this == outroManga
+        // retorna positivo se this > outroManga
+
+//        if (this.id < outroManga.getId()){
+//            return -1;
+//        }else if (this.id.equals(outroManga.getId())){
+//            return 0;
+//        } else {
+//            return 1;
+//        }
+
+        // como o id está tipado como um Wrapper, ele já tem o metodo "compareTo", pois o classe wrapper Long implementa Comparable. basta chamar.
+        // return this.id.compareTo(outroManga.getId());
+
+        // tipo primitivo não possui o metodo compareTo... mas tem como transformar o tipo primitivo em wrapper e usar o metodo.
+        // return Double.valueOf(preco).compareTo(outroManga.getPreco());
+        // return Double.compare(preco, outroManga.getPreco());
+
+
+        return this.nome.compareTo(outroManga.getNome());
     }
 }
